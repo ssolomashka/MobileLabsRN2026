@@ -1,0 +1,58 @@
+export const INITIAL_TASKS = [
+  {
+    id: '1',
+    title: 'Зробити 10 кліків',
+    description: "Натисніть на об'єкт 10 разів",
+    icon: '👆',
+    check: (s) => s.tapCount >= 10,
+  },
+  {
+    id: '2',
+    title: 'Подвійний клік 5 разів',
+    description: 'Використай подвійний тап 5 разів',
+    icon: '✌️',
+    check: (s) => s.doubleTapCount >= 5,
+  },
+  {
+    id: '3',
+    title: 'Утримувати 3 секунди',
+    description: "Зроби довге натискання на об'єкт",
+    icon: '⏳',
+    check: (s) => s.longPressCount >= 1,
+  },
+  {
+    id: '4',
+    title: "Перетягнути об'єкт",
+    description: "Перемісти об'єкт по екрану",
+    icon: '🖐️',
+    check: (s) => s.panCount >= 1,
+  },
+  {
+    id: '5',
+    title: 'Свайп вправо',
+    description: 'Зроби швидкий свайп вправо',
+    icon: '➡️',
+    check: (s) => s.flingRightCount >= 1,
+  },
+  {
+    id: '6',
+    title: 'Свайп вліво',
+    description: 'Зроби швидкий свайп вліво',
+    icon: '⬅️',
+    check: (s) => s.flingLeftCount >= 1,
+  },
+  {
+    id: '7',
+    title: "Змінити розмір об'єкта",
+    description: 'Використай жест пінч для масштабування',
+    icon: '🔍',
+    check: (s) => s.pinchCount >= 1,
+  },
+  {
+    id: '8',
+    title: 'Отримати 100 очок',
+    description: 'Набери загалом 100 очок',
+    icon: '🏆',
+    check: (s) => s.score >= 100,
+  },
+];
